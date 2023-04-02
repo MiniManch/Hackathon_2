@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Ginger",
+    "gender": "F",
+    "breed": "dog",
+    "date": "201925",
+    "price": 100,
+    "image":"https://tinyurl.com/4x4xr96w",
+    "details":"Dogs make us feel less alone.\nDogs can be there for you even when people can't. They offer unconditional love, emotional support, and constant cuddles that help stave off social isolation. "
+
+  },
+  {
+    "id": 2,
+    "name": "Yoni",
+    "gender": "M",
+    "breed": "rabbit",
+    "date": "201255",
+    "price": 20,
+    "image":"https://tinyurl.com/2z3tcttn",
+    "details":"Rabbits are a suitable option for apartment living since they can be litter-box trained, groom themselves, and are relatively quiet. "
+  },
+  {
+    "id": 3,
+    "name": "Fefe",
+    "gender": "F",
+    "breed": "ferret",
+    "date": "2022105",
+    "price": 80,
+    "image":"https://tinyurl.com/kkrtnykn",
+    "details":"Ferrets love to play with humans and each other. To accommodate their playful nature, provide them with a large cage."
+
+  },
+  {
+    "id": 4,
+    "name": "Savage",
+    "gender": "M",
+    "breed": "hamster",
+    "date": "2021418",
+    "price": 5,
+    "image":"https://tinyurl.com/zbwu5ekd",
+    "details":"They are quiet, clean, low maintenance, and don't shed. "
+
+  },
+  {
+    "id": 5,
+    "name": "Kendrick",
+    "gender": "F",
+    "breed": "rat",
+    "date": "202341",
+    "price": 10,
+    "image":"https://tinyurl.com/2muhzavx",
+    "details":"Rats are friendly, quiet, and intelligent animals. Their small size and relatively easy care make them perfect for smaller homes."
+
+  },
+  {
+    "id": 6,
+    "name": "Slimy",
+    "gender": "F",
+    "breed": "gecko",
+    "date": "2019218",
+    "price": 15,
+    "image":"https://tinyurl.com/43arbaec",
+    "details":" They make no noise and are relatively easy to care for. "
+
+  }
+]

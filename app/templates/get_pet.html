@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class = 'pet_header'>
+  <h1>About this pet!</h1>
+  <h3>{{pet.name}}</h3>
+  <p><strong>breed:</strong> {{pet.breed}}</p>
+  <p><strong>details:</strong> {{pet.details}}</p>
+  <p><strong>gender:</strong> {{pet.gender}}</p>
+  <p><strong>day of birth:</strong> {{pet.birth_date}}</p>
+  <p><strong>price:</strong> {{pet.price}}$</p>
+  <img src="{{pet.image}}" alt="" style="width :100px; height:100px;">
+  <a href="{{url_for('add_to_cart',pet_id = pet.id,cart_id = 1)}}" class="btn ms-5"><i class="fas fa-link"></i> add to cart!</a>
+
+</header>
+{% endblock %} 

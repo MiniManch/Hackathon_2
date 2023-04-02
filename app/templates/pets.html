@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mx-auto mt-4">
+  <div class="row">
+    {% for pet in pets%}
+    {% if pet.cart != 1%}
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{{pet.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{pet.name}}, {{pet.breed}}</h5>
+          <p class="card-text">{{pet.price}}$</p>
+          <a href="{{url_for('get_pet',pet_id = pet.id)}}" class="btn ms-5"><i class="fas fa-link"></i> Visit Site</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor%}
+  </div>
+</div>
+{% endblock %}
