@@ -8,4 +8,4 @@ passwd = 'admatainov14!'
 )
 
 my_cursor = mydb.cursor()
-my_cursor.execute('CREATE DATABASE hackathon_2')
+my_cursor.execute('CREATE DATABASE IF NOT EXISTS hackathon_2')
