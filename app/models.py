@@ -2,41 +2,42 @@ from app import db
 
 
 class User(db.Model):
-    id           = db.Column(db.Integer, primary_key=True)
-    name         = db.Column(db.String(50), nullable=False)
-    Win_record   = db.Column(db.String(50), nullable=False)
-    fave_poke    = db.Column(db.Integer, db.ForeignKey("pokemon.id"))
-    current_team = db.relationship("Pokemon", backref="current_owner", lazy="dynamic")
-    difficulty   = db.Column(db.String(50))
+	id = db.Column(db.Integer, primary_key=True)
+	name = db.Column(db.String(50), nullable=False)
+	team = db.relationship('Pokemon', backref='owner')
+	password = db.Column(db.String(50), nullable=False)
 
-    def change_difficulty(self):
-        if self.difficulty == 'easy':
-            self.difficulty == 'hard'
-        elif self.difficulty == 'hard':
-            self.difficulty == 'easy'
-        else:
-            return False
-        return f'your difficulty is now {self.difficulty}'
 
-class Move_pokemon:
-    move_id = db.Column(db.Integer,db.ForeignKey('move.id'))
-    pokemon_id = db.Column(db.Integer,db.ForeignKey('pokemon.id'))
+move_pokemon_table = db.Table(
+	'PokemonMove',
+	db.Column('move_id',db.Integer, db.ForeignKey('move.id')),
+	db.Column('pokemon_id',db.Integer, db.ForeignKey('pokemon.id'))
+)
+
 
 class Move(db.Model):
-    id          = db.Column(db.Integer, primary_key=True)
-    acc         = db.Column(db.Integer, nullable=False)
-    power       = db.Column(db.Integer, nullable=False)
-    name        = db.Column(db.String(200), nullable=False)
-    style       = db.Column(db.Boolean, default=True )
-    effect_type = db.Column(db.String(50), default='Attack')
-    type        = db.Column(db.String(50))
+	id = db.Column(db.Integer, primary_key=True)
+	acc = db.Column(db.Integer, nullable=False)
+	power = db.Column(db.Integer, nullable=False)
+	name = db.Column(db.String(200), nullable=False)
+	effect_type = db.Column(db.String(50))
+	effect_power = db.Column(db.Integer)
+	type = db.Column(db.String(50))
+
+	def __init__(self, dictionary):
+		for key, value in dictionary.items():
+			setattr(self, key, value)
 
 
 class Pokemon(db.Model):
-    id       =  db.Column(db.Integer, primary_key=True)
-    name     =  db.Column(db.String(200), nullable=False)
-    type     = db.Column(db.String(50), nullable=False)
-    moves    = db.relationship('Move',secondary=Move_pokemon,backref='moves')
-    strength = db.Column(db.Integer, nullable=False,default=20)
-    health   = db.Column(db.Integer, nullable=False,default=100)
-    owner    = db.Column(db.Integer,db.ForeignKey('user.id'))
+	id = db.Column(db.Integer, primary_key=True)
+	name = db.Column(db.String(50), nullable=False)
+	health = db.Column(db.Integer, default=100)
+	attack = db.Column(db.Integer, default=100)
+	owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+	moves = db.relationship('Move', secondary=move_pokemon_table, backref='pokemon')
+	type = db.Column(db.String(50),nullable=False)
+
+	def __init__(self, dictionary):
+		for key, value in dictionary.items():
+			setattr(self, key, value)

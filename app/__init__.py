@@ -1,8 +1,9 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 import flask_migrate
-from app.my_functions import get_move,get_random_string,getpoke
+from app.my_functions import get_random_string, populate_pokemon, populate_moves
 from app import create_db
+import random
 
 app = Flask(__name__)
 #
@@ -19,20 +20,25 @@ migrate = flask_migrate.Migrate(app, db)
 #
 from app import models
 # from app import routes
-#
-# my_file = 'app/static/users.json'
-#
+
+pokemon_file = 'app/static/pokemon.json'
+moves_file = 'app/static/final_moves.json'
+
 with app.app_context():
-	# for pet in models.Pet.query.all():
-	# 	db.session.delete(pet)
-	# db.session.commit()
-	# db.drop_all()
+	db.drop_all()
 	db.create_all()
-	# populate_database(db,models.Pet,my_file)
-	# my_cart = models.Cart(id = 1)
-	# db.session.add(my_cart)
+	populate_moves(database=db, model=models.Move, json_file=moves_file)
+	populate_pokemon(database=db, model=models.Pokemon, model_2=models.Move, json_file=pokemon_file)
+	my_poke = list(models.Pokemon.query.filter_by(id=786))
+	for poke in my_poke:
+		print(poke.moves)
 	# db.session.commit()
 
+
+
+
+
+# populate_pokemon(database=db, model=models.Pokemon, json_file=pokemon_file)
 #
 # print(get_move(1))
 # print(getpoke(1))

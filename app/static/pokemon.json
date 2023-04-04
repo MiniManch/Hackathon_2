@@ -1,0 +1,2012 @@
+[
+  {
+    "id": 3,
+    "name": "venusaur",
+    "type": "grass",
+    "moves": null,
+    "strength": 82,
+    "health": 80,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png"
+  },
+  {
+    "id": 6,
+    "name": "charizard",
+    "type": "fire",
+    "moves": null,
+    "strength": 84,
+    "health": 78,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png"
+  },
+  {
+    "id": 9,
+    "name": "blastoise",
+    "type": "water",
+    "moves": null,
+    "strength": 83,
+    "health": 79,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png"
+  },
+  {
+    "id": 18,
+    "name": "pidgeot",
+    "type": "normal",
+    "moves": null,
+    "strength": 80,
+    "health": 83,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/18.png"
+  },
+  {
+    "id": 21,
+    "name": "spearow",
+    "type": "normal",
+    "moves": null,
+    "strength": 60,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/21.png"
+  },
+  {
+    "id": 27,
+    "name": "sandshrew",
+    "type": "ground",
+    "moves": null,
+    "strength": 75,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/27.png"
+  },
+  {
+    "id": 39,
+    "name": "jigglypuff",
+    "type": "normal",
+    "moves": null,
+    "strength": 45,
+    "health": 115,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/39.png"
+  },
+  {
+    "id": 45,
+    "name": "vileplume",
+    "type": "grass",
+    "moves": null,
+    "strength": 80,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/45.png"
+  },
+  {
+    "id": 51,
+    "name": "dugtrio",
+    "type": "ground",
+    "moves": null,
+    "strength": 100,
+    "health": 35,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/51.png"
+  },
+  {
+    "id": 54,
+    "name": "psyduck",
+    "type": "water",
+    "moves": null,
+    "strength": 52,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/54.png"
+  },
+  {
+    "id": 57,
+    "name": "primeape",
+    "type": "fighting",
+    "moves": null,
+    "strength": 105,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/57.png"
+  },
+  {
+    "id": 60,
+    "name": "poliwag",
+    "type": "water",
+    "moves": null,
+    "strength": 50,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/60.png"
+  },
+  {
+    "id": 63,
+    "name": "abra",
+    "type": "psychic",
+    "moves": null,
+    "strength": 20,
+    "health": 25,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/63.png"
+  },
+  {
+    "id": 66,
+    "name": "machop",
+    "type": "fighting",
+    "moves": null,
+    "strength": 80,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/66.png"
+  },
+  {
+    "id": 69,
+    "name": "bellsprout",
+    "type": "grass",
+    "moves": null,
+    "strength": 75,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/69.png"
+  },
+  {
+    "id": 72,
+    "name": "tentacool",
+    "type": "water",
+    "moves": null,
+    "strength": 40,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/72.png"
+  },
+  {
+    "id": 75,
+    "name": "graveler",
+    "type": "rock",
+    "moves": null,
+    "strength": 95,
+    "health": 55,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/75.png"
+  },
+  {
+    "id": 78,
+    "name": "rapidash",
+    "type": "fire",
+    "moves": null,
+    "strength": 100,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/78.png"
+  },
+  {
+    "id": 81,
+    "name": "magnemite",
+    "type": "electric",
+    "moves": null,
+    "strength": 35,
+    "health": 25,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/81.png"
+  },
+  {
+    "id": 84,
+    "name": "doduo",
+    "type": "normal",
+    "moves": null,
+    "strength": 85,
+    "health": 35,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/84.png"
+  },
+  {
+    "id": 87,
+    "name": "dewgong",
+    "type": "water",
+    "moves": null,
+    "strength": 70,
+    "health": 90,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/87.png"
+  },
+  {
+    "id": 90,
+    "name": "shellder",
+    "type": "water",
+    "moves": null,
+    "strength": 65,
+    "health": 30,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/90.png"
+  },
+  {
+    "id": 93,
+    "name": "haunter",
+    "type": "ghost",
+    "moves": null,
+    "strength": 50,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/93.png"
+  },
+  {
+    "id": 96,
+    "name": "drowzee",
+    "type": "psychic",
+    "moves": null,
+    "strength": 48,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/96.png"
+  },
+  {
+    "id": 99,
+    "name": "kingler",
+    "type": "water",
+    "moves": null,
+    "strength": 130,
+    "health": 55,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/99.png"
+  },
+  {
+    "id": 102,
+    "name": "exeggcute",
+    "type": "grass",
+    "moves": null,
+    "strength": 40,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/102.png"
+  },
+  {
+    "id": 105,
+    "name": "marowak",
+    "type": "ground",
+    "moves": null,
+    "strength": 80,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/105.png"
+  },
+  {
+    "id": 108,
+    "name": "lickitung",
+    "type": "normal",
+    "moves": null,
+    "strength": 55,
+    "health": 90,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/108.png"
+  },
+  {
+    "id": 111,
+    "name": "rhyhorn",
+    "type": "ground",
+    "moves": null,
+    "strength": 85,
+    "health": 80,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/111.png"
+  },
+  {
+    "id": 114,
+    "name": "tangela",
+    "type": "grass",
+    "moves": null,
+    "strength": 55,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/114.png"
+  },
+  {
+    "id": 117,
+    "name": "seadra",
+    "type": "water",
+    "moves": null,
+    "strength": 65,
+    "health": 55,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/117.png"
+  },
+  {
+    "id": 120,
+    "name": "staryu",
+    "type": "water",
+    "moves": null,
+    "strength": 45,
+    "health": 30,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/120.png"
+  },
+  {
+    "id": 126,
+    "name": "magmar",
+    "type": "fire",
+    "moves": null,
+    "strength": 95,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/126.png"
+  },
+  {
+    "id": 129,
+    "name": "magikarp",
+    "type": "water",
+    "moves": null,
+    "strength": 10,
+    "health": 20,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/129.png"
+  },
+  {
+    "id": 132,
+    "name": "ditto",
+    "type": "normal",
+    "moves": null,
+    "strength": 48,
+    "health": 48,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+  },
+  {
+    "id": 135,
+    "name": "jolteon",
+    "type": "electric",
+    "moves": null,
+    "strength": 65,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/135.png"
+  },
+  {
+    "id": 138,
+    "name": "omanyte",
+    "type": "rock",
+    "moves": null,
+    "strength": 40,
+    "health": 35,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/138.png"
+  },
+  {
+    "id": 141,
+    "name": "kabutops",
+    "type": "rock",
+    "moves": null,
+    "strength": 115,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/141.png"
+  },
+  {
+    "id": 150,
+    "name": "mewtwo",
+    "type": "psychic",
+    "moves": null,
+    "strength": 110,
+    "health": 106,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/150.png"
+  },
+  {
+    "id": 153,
+    "name": "bayleef",
+    "type": "grass",
+    "moves": null,
+    "strength": 62,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/153.png"
+  },
+  {
+    "id": 156,
+    "name": "quilava",
+    "type": "fire",
+    "moves": null,
+    "strength": 64,
+    "health": 58,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/156.png"
+  },
+  {
+    "id": 159,
+    "name": "croconaw",
+    "type": "water",
+    "moves": null,
+    "strength": 80,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/159.png"
+  },
+  {
+    "id": 162,
+    "name": "furret",
+    "type": "normal",
+    "moves": null,
+    "strength": 76,
+    "health": 85,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/162.png"
+  },
+  {
+    "id": 171,
+    "name": "lanturn",
+    "type": "water",
+    "moves": null,
+    "strength": 58,
+    "health": 125,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/171.png"
+  },
+  {
+    "id": 174,
+    "name": "igglybuff",
+    "type": "normal",
+    "moves": null,
+    "strength": 30,
+    "health": 90,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/174.png"
+  },
+  {
+    "id": 177,
+    "name": "natu",
+    "type": "psychic",
+    "moves": null,
+    "strength": 50,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/177.png"
+  },
+  {
+    "id": 180,
+    "name": "flaaffy",
+    "type": "electric",
+    "moves": null,
+    "strength": 55,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/180.png"
+  },
+  {
+    "id": 183,
+    "name": "marill",
+    "type": "water",
+    "moves": null,
+    "strength": 20,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/183.png"
+  },
+  {
+    "id": 186,
+    "name": "politoed",
+    "type": "water",
+    "moves": null,
+    "strength": 75,
+    "health": 90,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/186.png"
+  },
+  {
+    "id": 189,
+    "name": "jumpluff",
+    "type": "grass",
+    "moves": null,
+    "strength": 55,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/189.png"
+  },
+  {
+    "id": 192,
+    "name": "sunflora",
+    "type": "grass",
+    "moves": null,
+    "strength": 75,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/192.png"
+  },
+  {
+    "id": 195,
+    "name": "quagsire",
+    "type": "water",
+    "moves": null,
+    "strength": 85,
+    "health": 95,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/195.png"
+  },
+  {
+    "id": 201,
+    "name": "unown",
+    "type": "psychic",
+    "moves": null,
+    "strength": 72,
+    "health": 48,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/201.png"
+  },
+  {
+    "id": 207,
+    "name": "gligar",
+    "type": "ground",
+    "moves": null,
+    "strength": 75,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/207.png"
+  },
+  {
+    "id": 216,
+    "name": "teddiursa",
+    "type": "normal",
+    "moves": null,
+    "strength": 80,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/216.png"
+  },
+  {
+    "id": 219,
+    "name": "magcargo",
+    "type": "fire",
+    "moves": null,
+    "strength": 50,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/219.png"
+  },
+  {
+    "id": 222,
+    "name": "corsola",
+    "type": "water",
+    "moves": null,
+    "strength": 55,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/222.png"
+  },
+  {
+    "id": 231,
+    "name": "phanpy",
+    "type": "ground",
+    "moves": null,
+    "strength": 60,
+    "health": 90,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/231.png"
+  },
+  {
+    "id": 234,
+    "name": "stantler",
+    "type": "normal",
+    "moves": null,
+    "strength": 95,
+    "health": 73,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/234.png"
+  },
+  {
+    "id": 237,
+    "name": "hitmontop",
+    "type": "fighting",
+    "moves": null,
+    "strength": 95,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/237.png"
+  },
+  {
+    "id": 240,
+    "name": "magby",
+    "type": "fire",
+    "moves": null,
+    "strength": 75,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/240.png"
+  },
+  {
+    "id": 243,
+    "name": "raikou",
+    "type": "electric",
+    "moves": null,
+    "strength": 85,
+    "health": 90,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/243.png"
+  },
+  {
+    "id": 246,
+    "name": "larvitar",
+    "type": "rock",
+    "moves": null,
+    "strength": 64,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/246.png"
+  },
+  {
+    "id": 249,
+    "name": "lugia",
+    "type": "psychic",
+    "moves": null,
+    "strength": 90,
+    "health": 106,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/249.png"
+  },
+  {
+    "id": 252,
+    "name": "treecko",
+    "type": "grass",
+    "moves": null,
+    "strength": 45,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/252.png"
+  },
+  {
+    "id": 255,
+    "name": "torchic",
+    "type": "fire",
+    "moves": null,
+    "strength": 60,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/255.png"
+  },
+  {
+    "id": 258,
+    "name": "mudkip",
+    "type": "water",
+    "moves": null,
+    "strength": 70,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/258.png"
+  },
+  {
+    "id": 264,
+    "name": "linoone",
+    "type": "normal",
+    "moves": null,
+    "strength": 70,
+    "health": 78,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/264.png"
+  },
+  {
+    "id": 270,
+    "name": "lotad",
+    "type": "water",
+    "moves": null,
+    "strength": 30,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/270.png"
+  },
+  {
+    "id": 273,
+    "name": "seedot",
+    "type": "grass",
+    "moves": null,
+    "strength": 40,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/273.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/273.png"
+  },
+  {
+    "id": 276,
+    "name": "taillow",
+    "type": "normal",
+    "moves": null,
+    "strength": 55,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/276.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/276.png"
+  },
+  {
+    "id": 279,
+    "name": "pelipper",
+    "type": "water",
+    "moves": null,
+    "strength": 50,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/279.png"
+  },
+  {
+    "id": 282,
+    "name": "gardevoir",
+    "type": "psychic",
+    "moves": null,
+    "strength": 65,
+    "health": 68,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/282.png"
+  },
+  {
+    "id": 285,
+    "name": "shroomish",
+    "type": "grass",
+    "moves": null,
+    "strength": 40,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/285.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/285.png"
+  },
+  {
+    "id": 288,
+    "name": "vigoroth",
+    "type": "normal",
+    "moves": null,
+    "strength": 80,
+    "health": 80,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/288.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/288.png"
+  },
+  {
+    "id": 294,
+    "name": "loudred",
+    "type": "normal",
+    "moves": null,
+    "strength": 71,
+    "health": 84,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/294.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/294.png"
+  },
+  {
+    "id": 297,
+    "name": "hariyama",
+    "type": "fighting",
+    "moves": null,
+    "strength": 120,
+    "health": 144,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/297.png"
+  },
+  {
+    "id": 300,
+    "name": "skitty",
+    "type": "normal",
+    "moves": null,
+    "strength": 45,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/300.png"
+  },
+  {
+    "id": 309,
+    "name": "electrike",
+    "type": "electric",
+    "moves": null,
+    "strength": 45,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/309.png"
+  },
+  {
+    "id": 312,
+    "name": "minun",
+    "type": "electric",
+    "moves": null,
+    "strength": 40,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/312.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/312.png"
+  },
+  {
+    "id": 315,
+    "name": "roselia",
+    "type": "grass",
+    "moves": null,
+    "strength": 60,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/315.png"
+  },
+  {
+    "id": 318,
+    "name": "carvanha",
+    "type": "water",
+    "moves": null,
+    "strength": 90,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/318.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/318.png"
+  },
+  {
+    "id": 321,
+    "name": "wailord",
+    "type": "water",
+    "moves": null,
+    "strength": 90,
+    "health": 170,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/321.png"
+  },
+  {
+    "id": 324,
+    "name": "torkoal",
+    "type": "fire",
+    "moves": null,
+    "strength": 85,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/324.png"
+  },
+  {
+    "id": 327,
+    "name": "spinda",
+    "type": "normal",
+    "moves": null,
+    "strength": 60,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/327.png"
+  },
+  {
+    "id": 330,
+    "name": "flygon",
+    "type": "ground",
+    "moves": null,
+    "strength": 100,
+    "health": 80,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/330.png"
+  },
+  {
+    "id": 333,
+    "name": "swablu",
+    "type": "normal",
+    "moves": null,
+    "strength": 40,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/333.png"
+  },
+  {
+    "id": 339,
+    "name": "barboach",
+    "type": "water",
+    "moves": null,
+    "strength": 48,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/339.png"
+  },
+  {
+    "id": 342,
+    "name": "crawdaunt",
+    "type": "water",
+    "moves": null,
+    "strength": 120,
+    "health": 63,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/342.png"
+  },
+  {
+    "id": 345,
+    "name": "lileep",
+    "type": "rock",
+    "moves": null,
+    "strength": 41,
+    "health": 66,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/345.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/345.png"
+  },
+  {
+    "id": 348,
+    "name": "armaldo",
+    "type": "rock",
+    "moves": null,
+    "strength": 125,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/348.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/348.png"
+  },
+  {
+    "id": 351,
+    "name": "castform",
+    "type": "normal",
+    "moves": null,
+    "strength": 70,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/351.png"
+  },
+  {
+    "id": 354,
+    "name": "banette",
+    "type": "ghost",
+    "moves": null,
+    "strength": 115,
+    "health": 64,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/354.png"
+  },
+  {
+    "id": 357,
+    "name": "tropius",
+    "type": "grass",
+    "moves": null,
+    "strength": 68,
+    "health": 99,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/357.png"
+  },
+  {
+    "id": 360,
+    "name": "wynaut",
+    "type": "psychic",
+    "moves": null,
+    "strength": 23,
+    "health": 95,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/360.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/360.png"
+  },
+  {
+    "id": 366,
+    "name": "clamperl",
+    "type": "water",
+    "moves": null,
+    "strength": 64,
+    "health": 35,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/366.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/366.png"
+  },
+  {
+    "id": 369,
+    "name": "relicanth",
+    "type": "water",
+    "moves": null,
+    "strength": 90,
+    "health": 100,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/369.png"
+  },
+  {
+    "id": 387,
+    "name": "turtwig",
+    "type": "grass",
+    "moves": null,
+    "strength": 68,
+    "health": 55,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/387.png"
+  },
+  {
+    "id": 390,
+    "name": "chimchar",
+    "type": "fire",
+    "moves": null,
+    "strength": 58,
+    "health": 44,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/390.png"
+  },
+  {
+    "id": 393,
+    "name": "piplup",
+    "type": "water",
+    "moves": null,
+    "strength": 51,
+    "health": 53,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/393.png"
+  },
+  {
+    "id": 396,
+    "name": "starly",
+    "type": "normal",
+    "moves": null,
+    "strength": 55,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/396.png"
+  },
+  {
+    "id": 399,
+    "name": "bidoof",
+    "type": "normal",
+    "moves": null,
+    "strength": 45,
+    "health": 59,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/399.png"
+  },
+  {
+    "id": 405,
+    "name": "luxray",
+    "type": "electric",
+    "moves": null,
+    "strength": 120,
+    "health": 80,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/405.png"
+  },
+  {
+    "id": 408,
+    "name": "cranidos",
+    "type": "rock",
+    "moves": null,
+    "strength": 125,
+    "health": 67,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/408.png"
+  },
+  {
+    "id": 411,
+    "name": "bastiodon",
+    "type": "rock",
+    "moves": null,
+    "strength": 52,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/411.png"
+  },
+  {
+    "id": 417,
+    "name": "pachirisu",
+    "type": "electric",
+    "moves": null,
+    "strength": 45,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/417.png"
+  },
+  {
+    "id": 420,
+    "name": "cherubi",
+    "type": "grass",
+    "moves": null,
+    "strength": 35,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/420.png"
+  },
+  {
+    "id": 423,
+    "name": "gastrodon",
+    "type": "water",
+    "moves": null,
+    "strength": 83,
+    "health": 111,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/423.png"
+  },
+  {
+    "id": 426,
+    "name": "drifblim",
+    "type": "ghost",
+    "moves": null,
+    "strength": 80,
+    "health": 150,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/426.png"
+  },
+  {
+    "id": 429,
+    "name": "mismagius",
+    "type": "ghost",
+    "moves": null,
+    "strength": 60,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/429.png"
+  },
+  {
+    "id": 432,
+    "name": "purugly",
+    "type": "normal",
+    "moves": null,
+    "strength": 82,
+    "health": 71,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/432.png"
+  },
+  {
+    "id": 438,
+    "name": "bonsly",
+    "type": "rock",
+    "moves": null,
+    "strength": 80,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/438.png"
+  },
+  {
+    "id": 441,
+    "name": "chatot",
+    "type": "normal",
+    "moves": null,
+    "strength": 65,
+    "health": 76,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/441.png"
+  },
+  {
+    "id": 447,
+    "name": "riolu",
+    "type": "fighting",
+    "moves": null,
+    "strength": 70,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/447.png"
+  },
+  {
+    "id": 450,
+    "name": "hippowdon",
+    "type": "ground",
+    "moves": null,
+    "strength": 112,
+    "health": 108,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/450.png"
+  },
+  {
+    "id": 456,
+    "name": "finneon",
+    "type": "water",
+    "moves": null,
+    "strength": 49,
+    "health": 49,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/456.png"
+  },
+  {
+    "id": 459,
+    "name": "snover",
+    "type": "grass",
+    "moves": null,
+    "strength": 62,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/459.png"
+  },
+  {
+    "id": 462,
+    "name": "magnezone",
+    "type": "electric",
+    "moves": null,
+    "strength": 70,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/462.png"
+  },
+  {
+    "id": 465,
+    "name": "tangrowth",
+    "type": "grass",
+    "moves": null,
+    "strength": 100,
+    "health": 100,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/465.png"
+  },
+  {
+    "id": 474,
+    "name": "porygon-z",
+    "type": "normal",
+    "moves": null,
+    "strength": 80,
+    "health": 85,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/474.png"
+  },
+  {
+    "id": 477,
+    "name": "dusknoir",
+    "type": "ghost",
+    "moves": null,
+    "strength": 100,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/477.png"
+  },
+  {
+    "id": 480,
+    "name": "uxie",
+    "type": "psychic",
+    "moves": null,
+    "strength": 75,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/480.png"
+  },
+  {
+    "id": 486,
+    "name": "regigigas",
+    "type": "normal",
+    "moves": null,
+    "strength": 160,
+    "health": 110,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/486.png"
+  },
+  {
+    "id": 489,
+    "name": "phione",
+    "type": "water",
+    "moves": null,
+    "strength": 80,
+    "health": 80,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/489.png"
+  },
+  {
+    "id": 492,
+    "name": "shaymin-land",
+    "type": "grass",
+    "moves": null,
+    "strength": 100,
+    "health": 100,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/492.png"
+  },
+  {
+    "id": 495,
+    "name": "snivy",
+    "type": "grass",
+    "moves": null,
+    "strength": 45,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/495.png"
+  },
+  {
+    "id": 498,
+    "name": "tepig",
+    "type": "fire",
+    "moves": null,
+    "strength": 63,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/498.png"
+  },
+  {
+    "id": 501,
+    "name": "oshawott",
+    "type": "water",
+    "moves": null,
+    "strength": 55,
+    "health": 55,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/501.png"
+  },
+  {
+    "id": 504,
+    "name": "patrat",
+    "type": "normal",
+    "moves": null,
+    "strength": 55,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/504.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/504.png"
+  },
+  {
+    "id": 507,
+    "name": "herdier",
+    "type": "normal",
+    "moves": null,
+    "strength": 80,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/507.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/507.png"
+  },
+  {
+    "id": 513,
+    "name": "pansear",
+    "type": "fire",
+    "moves": null,
+    "strength": 53,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/513.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/513.png"
+  },
+  {
+    "id": 516,
+    "name": "simipour",
+    "type": "water",
+    "moves": null,
+    "strength": 98,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/516.png"
+  },
+  {
+    "id": 519,
+    "name": "pidove",
+    "type": "normal",
+    "moves": null,
+    "strength": 55,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/519.png"
+  },
+  {
+    "id": 522,
+    "name": "blitzle",
+    "type": "electric",
+    "moves": null,
+    "strength": 60,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/522.png"
+  },
+  {
+    "id": 525,
+    "name": "boldore",
+    "type": "rock",
+    "moves": null,
+    "strength": 105,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/525.png"
+  },
+  {
+    "id": 528,
+    "name": "swoobat",
+    "type": "psychic",
+    "moves": null,
+    "strength": 57,
+    "health": 67,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/528.png"
+  },
+  {
+    "id": 531,
+    "name": "audino",
+    "type": "normal",
+    "moves": null,
+    "strength": 60,
+    "health": 103,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/531.png"
+  },
+  {
+    "id": 534,
+    "name": "conkeldurr",
+    "type": "fighting",
+    "moves": null,
+    "strength": 140,
+    "health": 105,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/534.png"
+  },
+  {
+    "id": 537,
+    "name": "seismitoad",
+    "type": "water",
+    "moves": null,
+    "strength": 95,
+    "health": 105,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/537.png"
+  },
+  {
+    "id": 546,
+    "name": "cottonee",
+    "type": "grass",
+    "moves": null,
+    "strength": 27,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/546.png"
+  },
+  {
+    "id": 549,
+    "name": "lilligant",
+    "type": "grass",
+    "moves": null,
+    "strength": 60,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/549.png"
+  },
+  {
+    "id": 552,
+    "name": "krokorok",
+    "type": "ground",
+    "moves": null,
+    "strength": 82,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/552.png"
+  },
+  {
+    "id": 555,
+    "name": "darmanitan-standard",
+    "type": "fire",
+    "moves": null,
+    "strength": 140,
+    "health": 105,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/555.png"
+  },
+  {
+    "id": 561,
+    "name": "sigilyph",
+    "type": "psychic",
+    "moves": null,
+    "strength": 58,
+    "health": 72,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/561.png"
+  },
+  {
+    "id": 564,
+    "name": "tirtouga",
+    "type": "water",
+    "moves": null,
+    "strength": 78,
+    "health": 54,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/564.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/564.png"
+  },
+  {
+    "id": 567,
+    "name": "archeops",
+    "type": "rock",
+    "moves": null,
+    "strength": 140,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/567.png"
+  },
+  {
+    "id": 573,
+    "name": "cinccino",
+    "type": "normal",
+    "moves": null,
+    "strength": 95,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/573.png"
+  },
+  {
+    "id": 576,
+    "name": "gothitelle",
+    "type": "psychic",
+    "moves": null,
+    "strength": 55,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/576.png"
+  },
+  {
+    "id": 579,
+    "name": "reuniclus",
+    "type": "psychic",
+    "moves": null,
+    "strength": 65,
+    "health": 110,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/579.png"
+  },
+  {
+    "id": 585,
+    "name": "deerling",
+    "type": "normal",
+    "moves": null,
+    "strength": 60,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/585.png"
+  },
+  {
+    "id": 591,
+    "name": "amoonguss",
+    "type": "grass",
+    "moves": null,
+    "strength": 85,
+    "health": 114,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/591.png"
+  },
+  {
+    "id": 594,
+    "name": "alomomola",
+    "type": "water",
+    "moves": null,
+    "strength": 75,
+    "health": 165,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/594.png"
+  },
+  {
+    "id": 597,
+    "name": "ferroseed",
+    "type": "grass",
+    "moves": null,
+    "strength": 50,
+    "health": 44,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/597.png"
+  },
+  {
+    "id": 603,
+    "name": "eelektrik",
+    "type": "electric",
+    "moves": null,
+    "strength": 85,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/603.png"
+  },
+  {
+    "id": 606,
+    "name": "beheeyem",
+    "type": "psychic",
+    "moves": null,
+    "strength": 75,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/606.png"
+  },
+  {
+    "id": 609,
+    "name": "chandelure",
+    "type": "ghost",
+    "moves": null,
+    "strength": 55,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/609.png"
+  },
+  {
+    "id": 618,
+    "name": "stunfisk",
+    "type": "ground",
+    "moves": null,
+    "strength": 66,
+    "health": 109,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/618.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/618.png"
+  },
+  {
+    "id": 627,
+    "name": "rufflet",
+    "type": "normal",
+    "moves": null,
+    "strength": 83,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/627.png"
+  },
+  {
+    "id": 639,
+    "name": "terrakion",
+    "type": "rock",
+    "moves": null,
+    "strength": 129,
+    "health": 91,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/639.png"
+  },
+  {
+    "id": 642,
+    "name": "thundurus-incarnate",
+    "type": "electric",
+    "moves": null,
+    "strength": 115,
+    "health": 79,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/642.png"
+  },
+  {
+    "id": 645,
+    "name": "landorus-incarnate",
+    "type": "ground",
+    "moves": null,
+    "strength": 125,
+    "health": 89,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/645.png"
+  },
+  {
+    "id": 648,
+    "name": "meloetta-aria",
+    "type": "normal",
+    "moves": null,
+    "strength": 77,
+    "health": 100,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/648.png"
+  },
+  {
+    "id": 651,
+    "name": "quilladin",
+    "type": "grass",
+    "moves": null,
+    "strength": 78,
+    "health": 61,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/651.png"
+  },
+  {
+    "id": 654,
+    "name": "braixen",
+    "type": "fire",
+    "moves": null,
+    "strength": 59,
+    "health": 59,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
+    "image_back": null
+  },
+  {
+    "id": 657,
+    "name": "frogadier",
+    "type": "water",
+    "moves": null,
+    "strength": 63,
+    "health": 54,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
+    "image_back": null
+  },
+  {
+    "id": 660,
+    "name": "diggersby",
+    "type": "normal",
+    "moves": null,
+    "strength": 56,
+    "health": 85,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/660.png",
+    "image_back": null
+  },
+  {
+    "id": 663,
+    "name": "talonflame",
+    "type": "fire",
+    "moves": null,
+    "strength": 81,
+    "health": 78,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/663.png"
+  },
+  {
+    "id": 672,
+    "name": "skiddo",
+    "type": "grass",
+    "moves": null,
+    "strength": 65,
+    "health": 66,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/672.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/672.png"
+  },
+  {
+    "id": 675,
+    "name": "pangoro",
+    "type": "fighting",
+    "moves": null,
+    "strength": 124,
+    "health": 95,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png",
+    "image_back": null
+  },
+  {
+    "id": 678,
+    "name": "meowstic-male",
+    "type": "psychic",
+    "moves": null,
+    "strength": 48,
+    "health": 74,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+    "image_back": null
+  },
+  {
+    "id": 693,
+    "name": "clawitzer",
+    "type": "water",
+    "moves": null,
+    "strength": 73,
+    "health": 71,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png",
+    "image_back": null
+  },
+  {
+    "id": 696,
+    "name": "tyrunt",
+    "type": "rock",
+    "moves": null,
+    "strength": 89,
+    "health": 58,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png",
+    "image_back": null
+  },
+  {
+    "id": 699,
+    "name": "aurorus",
+    "type": "rock",
+    "moves": null,
+    "strength": 77,
+    "health": 123,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png",
+    "image_back": null
+  },
+  {
+    "id": 702,
+    "name": "dedenne",
+    "type": "electric",
+    "moves": null,
+    "strength": 58,
+    "health": 67,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/702.png"
+  },
+  {
+    "id": 708,
+    "name": "phantump",
+    "type": "ghost",
+    "moves": null,
+    "strength": 70,
+    "health": 43,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/708.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/708.png"
+  },
+  {
+    "id": 711,
+    "name": "gourgeist-average",
+    "type": "ghost",
+    "moves": null,
+    "strength": 90,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
+    "image_back": null
+  },
+  {
+    "id": 714,
+    "name": "noibat",
+    "type": "flying",
+    "moves": null,
+    "strength": 30,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png",
+    "image_back": null
+  },
+  {
+    "id": 720,
+    "name": "hoopa",
+    "type": "psychic",
+    "moves": null,
+    "strength": 110,
+    "health": 80,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/720.png"
+  },
+  {
+    "id": 723,
+    "name": "dartrix",
+    "type": "grass",
+    "moves": null,
+    "strength": 75,
+    "health": 78,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/723.png"
+  },
+  {
+    "id": 726,
+    "name": "torracat",
+    "type": "fire",
+    "moves": null,
+    "strength": 85,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/726.png"
+  },
+  {
+    "id": 729,
+    "name": "brionne",
+    "type": "water",
+    "moves": null,
+    "strength": 69,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/729.png"
+  },
+  {
+    "id": 732,
+    "name": "trumbeak",
+    "type": "normal",
+    "moves": null,
+    "strength": 85,
+    "health": 55,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/732.png"
+  },
+  {
+    "id": 735,
+    "name": "gumshoos",
+    "type": "normal",
+    "moves": null,
+    "strength": 110,
+    "health": 88,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/735.png"
+  },
+  {
+    "id": 741,
+    "name": "oricorio-baile",
+    "type": "fire",
+    "moves": null,
+    "strength": 70,
+    "health": 75,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/741.png"
+  },
+  {
+    "id": 744,
+    "name": "rockruff",
+    "type": "rock",
+    "moves": null,
+    "strength": 65,
+    "health": 45,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/744.png"
+  },
+  {
+    "id": 750,
+    "name": "mudsdale",
+    "type": "ground",
+    "moves": null,
+    "strength": 125,
+    "health": 100,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/750.png"
+  },
+  {
+    "id": 753,
+    "name": "fomantis",
+    "type": "grass",
+    "moves": null,
+    "strength": 55,
+    "health": 40,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/753.png"
+  },
+  {
+    "id": 756,
+    "name": "shiinotic",
+    "type": "grass",
+    "moves": null,
+    "strength": 45,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/756.png"
+  },
+  {
+    "id": 759,
+    "name": "stufful",
+    "type": "normal",
+    "moves": null,
+    "strength": 75,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/759.png"
+  },
+  {
+    "id": 762,
+    "name": "steenee",
+    "type": "grass",
+    "moves": null,
+    "strength": 40,
+    "health": 52,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/762.png"
+  },
+  {
+    "id": 765,
+    "name": "oranguru",
+    "type": "normal",
+    "moves": null,
+    "strength": 60,
+    "health": 90,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/765.png"
+  },
+  {
+    "id": 771,
+    "name": "pyukumuku",
+    "type": "water",
+    "moves": null,
+    "strength": 60,
+    "health": 55,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/771.png"
+  },
+  {
+    "id": 774,
+    "name": "minior-red-meteor",
+    "type": "rock",
+    "moves": null,
+    "strength": 60,
+    "health": 60,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/774.png"
+  },
+  {
+    "id": 777,
+    "name": "togedemaru",
+    "type": "electric",
+    "moves": null,
+    "strength": 98,
+    "health": 65,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/777.png"
+  },
+  {
+    "id": 780,
+    "name": "drampa",
+    "type": "normal",
+    "moves": null,
+    "strength": 60,
+    "health": 78,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/780.png"
+  },
+  {
+    "id": 786,
+    "name": "tapu-lele",
+    "type": "psychic",
+    "moves": null,
+    "strength": 85,
+    "health": 70,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/786.png"
+  },
+  {
+    "id": 789,
+    "name": "cosmog",
+    "type": "psychic",
+    "moves": null,
+    "strength": 29,
+    "health": 43,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/789.png"
+  },
+  {
+    "id": 792,
+    "name": "lunala",
+    "type": "psychic",
+    "moves": null,
+    "strength": 113,
+    "health": 137,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/792.png"
+  },
+  {
+    "id": 798,
+    "name": "kartana",
+    "type": "grass",
+    "moves": null,
+    "strength": 181,
+    "health": 59,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/798.png"
+  },
+  {
+    "id": 807,
+    "name": "zeraora",
+    "type": "electric",
+    "moves": null,
+    "strength": 112,
+    "health": 88,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/807.png"
+  },
+  {
+    "id": 810,
+    "name": "grookey",
+    "type": "grass",
+    "moves": null,
+    "strength": 65,
+    "health": 50,
+    "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png",
+    "image_back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/810.png"
+  }
+]

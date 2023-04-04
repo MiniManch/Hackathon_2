@@ -1,22 +1,15 @@
 import flask 
 from flask_wtf import FlaskForm
-from wtforms import (StringField, IntegerField,SubmitField)
-from wtforms.validators import InputRequired, Length
+from wtforms import (StringField, IntegerField,SubmitField,PasswordField,validators)
+from wtforms.validators import InputRequired
 
 class add_user(FlaskForm):
-	name                  = StringField('name? ', validators=[InputRequired()])
-	street                = StringField('street',validators = [InputRequired()])
-	city    			  = StringField('city',validators = [InputRequired()])
-	zipcode               = StringField('zipcode',validators = [InputRequired()])
-	submit                = SubmitField('Submit') 
+	name                  = StringField('Name', validators=[InputRequired()])
+	password              = PasswordField('Password',validators=[validators.Length(min=8, message='Too short')])
+	submit                = SubmitField('Submit')
 
-    
-class login(FlaskForm):
-	name                  = StringField('name? ', validators=[InputRequired()])
-	city    			  = StringField('city',validators = [InputRequired()])
-	submit                = SubmitField('Submit') 
 
-    
-
-  
-  
+# class login(FlaskForm):
+# 	name                  = StringField('Name ', validators=[InputRequired()])
+# 	password    		  = PasswordField(validators=[validators.Length(min=8, message='Too short')])
+# 	submit                = SubmitField('Submit')
