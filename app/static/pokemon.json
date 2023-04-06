@@ -1637,7 +1637,7 @@
     "strength": 59,
     "health": 59,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/f/f7/Spr_b_6x_654.png"
   },
   {
     "id": 657,
@@ -1647,7 +1647,7 @@
     "strength": 63,
     "health": 54,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/4/48/Spr_b_6x_657.png"
   },
   {
     "id": 660,
@@ -1657,7 +1657,7 @@
     "strength": 56,
     "health": 85,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/660.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/2/29/Spr_b_7s_660.png"
   },
   {
     "id": 663,
@@ -1687,17 +1687,17 @@
     "strength": 124,
     "health": 95,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/f/fa/Spr_b_7s_675.png"
   },
   {
     "id": 678,
-    "name": "meowstic-male",
+    "name": "meowstic",
     "type": "psychic",
     "moves": null,
     "strength": 48,
     "health": 74,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/1/11/Spr_b_7s_678_m.png"
   },
   {
     "id": 693,
@@ -1707,7 +1707,7 @@
     "strength": 73,
     "health": 71,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/6/64/Spr_b_7s_693.png"
   },
   {
     "id": 696,
@@ -1717,7 +1717,7 @@
     "strength": 89,
     "health": 58,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/c/cf/Spr_b_7s_696.png"
   },
   {
     "id": 699,
@@ -1727,7 +1727,7 @@
     "strength": 77,
     "health": 123,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/5/57/Spr_b_7s_699.png"
   },
   {
     "id": 702,
@@ -1751,13 +1751,13 @@
   },
   {
     "id": 711,
-    "name": "gourgeist-average",
+    "name": "gourgeist",
     "type": "ghost",
     "moves": null,
     "strength": 90,
     "health": 65,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/f/f9/Spr_b_6x_711La.png"
   },
   {
     "id": 714,
@@ -1767,7 +1767,7 @@
     "strength": 30,
     "health": 40,
     "image_front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png",
-    "image_back": null
+    "image_back": "https://archives.bulbagarden.net/media/upload/f/f1/Spr_b_6x_714.png"
   },
   {
     "id": 720,

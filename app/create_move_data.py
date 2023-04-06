@@ -93,4 +93,12 @@ def get_all_pokemon():
 	with open('static/pokemon.json', 'w') as new_file:
 		json.dump(pokemon_dict, new_file)
 
-
+#
+# -webkit - background - clip: text !important;
+# -webkit - text - fill - color: transparent !important;
+# border - image - source: var(--gradient) !important;
+# text - decoration: none;
+# transition: all
+# .4
+# s
+# ease;

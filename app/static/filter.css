@@ -1,0 +1,257 @@
+:root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+}
+
+.btn-filter {
+  border:none;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.search_bar{
+   width:15vw;
+  margin-bottom:2vh;
+  margin-top:1vh;
+
+}
+#pic-1{
+    width:20vw;
+}
+.search_button{
+    border:none;
+    display:inline-block;
+   background: transparent;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  text-decoration: underline;
+}
+.search_button:hover {
+  border-bottom: 2px solid #fff !important;
+  text-decoration: underline;
+}
+
+.search_text{
+    width:10vw;
+    display:inline-block;
+    position:relative;
+}
+/* Options */
+#nav-colors, #font-colors, #edges {
+	margin-top: 10px;
+	.btn {
+		display: inline-block;
+		padding: 10px;
+		margin: 0 5px;
+		border: 2px solid #111111;
+		transition: 0.2s ease;
+		&:hover {
+			border: 2px solid white;
+		}
+	}
+}
+
+/* Navbar */
+.filter_nav {
+    margin-top:0;
+	border: 0;
+	border-radius: 0;
+	background: linear-gradient(to right, #ff5858, #f857a6);
+	.nav li > a, .navbar-brand {
+		max-height: 50px;
+		width: auto;
+		background: transparent !important;
+		font-size: 18px;
+		transition: 0.2s ease-in-out;
+		&:hover{
+			background-color: rgba(255,255,255,0.2);
+			font-size: 14px;
+			.link {
+				width: 100%;
+				padding: 0 5px 0 5px;
+				visibility: visible;
+				font-size: 14px;
+			}
+		}
+	}
+	.link {
+		width: 0;
+		font-family: 'Roboto', sans-serif;
+		transition: 0.2s ease-in-out;
+		visibility: hidden;
+		font-size: 0px;
+	}
+	span {
+		color: white;
+	}
+	.navbar-toggle {
+		padding-right: 0;
+	}
+	.navbar-collapse {
+		display: none;
+	}
+	button[type=submit] {
+		padding-right: 0;
+		span {
+			transition: 0.3s ease-in-out;
+		}
+		&:hover {
+			span {
+				transform: scale(1.3) rotate(90deg);
+			}
+		}
+	}
+	form {
+		padding: 0;
+		.form-control {
+			border: 0;
+			border-radius: 0;
+			color: black;
+			font-weight: bold;
+			background: rgba(255,255,255,0.7);
+			transition: 0.2s ease-in-out;
+			&:hover {
+				background: white;
+			}
+		}
+	}
+	/* Dropdown */
+	.dropdown {
+		.fa-caret-down {
+			padding-left: 3px;
+			font-size: 18px;
+			transition: 0.4s ease;
+		}
+		&.open {
+			background-color: rgba(255, 255, 255, 0.2);
+			font-size: 14px;
+			.link {
+				width: 100%;
+				visibility: visible;
+				font-size: 14px;
+				padding: 0 5px 0 5px;
+			}
+			.dropdown-toggle {
+				font-size: 14px;
+			}
+			.fa-caret-down {
+				transform: rotate(180deg);
+			}
+		}
+		.dropdown-menu {
+			min-width: 0px !important;
+			width: 100%;
+			text-align: center;
+			border-radius: 0;
+			li, a {
+				color: white;
+				font-size: 14px;
+				line-height: 30px;
+				&:hover {
+					letter-spacing: 1px;
+				}
+			}
+			a {
+				padding: 0 15px 0 15px;
+			}
+		}
+	}
+}
+
+/* Small Devices */
+@media(max-width: 769px) {
+	.navbar {
+		.link {
+			padding-left: 10px;
+			visibility: visible;
+			width: 100%;
+			font-size: 14px;
+		}
+		.navbar-brand {
+			.link {
+				visibility: hidden;
+			}
+		}
+	}
+	.dropdown {
+		.dropdown-menu {
+			text-align: left !important;
+		}
+	}
+	button[type=submit] {
+		width: 50%;
+		float: left;
+	}
+	.navbar-form {
+		border: 0;
+	}
+	.form-group {
+		padding: 0;
+		margin: 0;
+		input {
+			width: 50%;
+			float: left
+		}
+	}
+}
+
+.Normal{
+    background-image:url("/static/images/Normal_icon.png");
+}
+
+.Electric{
+    background-image:url("/static/images/Electric_icon.png");
+}
+
+.Grass{
+    background-image:url("https://archives.bulbagarden.net/media/upload/a/a8/Grass_icon_SwSh.png");
+}
+
+.Rock{
+    background-image:url("/static/images/Rock_icon.png");
+}
+
+.Flying{
+    background-image:url("https://archives.bulbagarden.net/media/upload/b/b5/Flying_icon_SwSh.png");
+}
+
+.Psychic{
+    background-image:url("https://archives.bulbagarden.net/media/upload/7/73/Psychic_icon_SwSh.png");
+}
+
+.Fighting{
+    background-image:url("https://archives.bulbagarden.net/media/upload/3/3b/Fighting_icon_SwSh.png");
+}
+
+.Water{
+    background-image:url("/static/images/Water_icon.png");
+}
+
+.Fire{
+    background-image:url("https://archives.bulbagarden.net/media/upload/a/ab/Fire_icon_SwSh.png");
+}
+
+.Ghost{
+    background-image:url("https://archives.bulbagarden.net/media/upload/0/01/Ghost_icon_SwSh.png");
+}
+
+.Ground{
+    background-image:url("https://archives.bulbagarden.net/media/upload/2/27/Ground_icon_SwSh.png");
+}
+
+.type_image{
+    width:50px;
+    height:50px;
+    margin:1vh;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.type_filters{
+    display:flex;
+    flex-direction:row;
+    background:transparent;
+    border:none;
+}

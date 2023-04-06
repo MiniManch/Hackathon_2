@@ -12,14 +12,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] ='mysql+pymysql://root:admatainov14!@local
 
 # Secret Key
 app.config['SECRET_KEY'] = get_random_string(256)
-# app.config['DEBUG'] = True
+app.config['DEBUG'] = True
 
 # Initialize The Database
 db = SQLAlchemy(app)
 migrate = flask_migrate.Migrate(app, db)
 #
 from app import models
-# from app import routes
+from app import routes
 
 pokemon_file = 'app/static/pokemon.json'
 moves_file = 'app/static/final_moves.json'
@@ -29,9 +29,6 @@ with app.app_context():
 	db.create_all()
 	populate_moves(database=db, model=models.Move, json_file=moves_file)
 	populate_pokemon(database=db, model=models.Pokemon, model_2=models.Move, json_file=pokemon_file)
-	my_poke = list(models.Pokemon.query.filter_by(id=786))
-	for poke in my_poke:
-		print(poke.moves)
 	# db.session.commit()
 
 

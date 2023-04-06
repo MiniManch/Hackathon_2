@@ -37,6 +37,8 @@ class Pokemon(db.Model):
 	owner_id = db.Column(db.Integer, db.ForeignKey('user.id'))
 	moves = db.relationship('Move', secondary=move_pokemon_table, backref='pokemon')
 	type = db.Column(db.String(50),nullable=False)
+	image_front = db.Column(db.String(200), nullable=False)
+	image_back = db.Column(db.String(200), nullable=False)
 
 	def __init__(self, dictionary):
 		for key, value in dictionary.items():

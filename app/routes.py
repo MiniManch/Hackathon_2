@@ -3,6 +3,20 @@ from app.forms import add_user as login_form
 from app import app, db
 from app import models
 
+types_list = [
+	'Electric',
+	'Grass' ,
+	'Rock',
+	'Flying',
+	'Normal',
+	'Psychic',
+	'Fighting',
+	'Water',
+	'Fire',
+	'Ghost',
+	'Ground'
+]
+
 
 @app.route('/')
 @app.route('/home')
@@ -12,13 +26,35 @@ def home():
 
 @app.route('/all_pokemon')
 def pokemon():
-	return render_template('all_pokemon.html', pokemon=models.Pokemon.query.all())
+	pokemon_to_show = models.Pokemon.query.all()
+	return render_template('all_pokemon.html', pokemon=pokemon_to_show, types=types_list)
 
 
-@app.route('/pokemon/<int:poke_id>')
-def get_poke(poke_id):
-	return render_template('get_poke.html', pet=models.Pokemon.query.filter_by(id=poke_id).first())
+@app.route('/pokemon/<poke_id_or_name>')
+def get_poke(poke_id_or_name):
+	if poke_id_or_name.isnumeric():
+		try:
+			poke_id = models.Pokemon.query.filter_by(id=poke_id_or_name).first().id
+		except:
+			return not_found(poke_id_or_name)
+	elif poke_id_or_name.isalpha():
+		try:
+			print('a')
+			poke_id = models.Pokemon.query.filter_by(name=poke_id_or_name.lower()).first().id
+		except:
+			return not_found(poke_id_or_name)
+	return render_template('get_poke.html', Pokemon=models.Pokemon.query.filter_by(id=poke_id).first())
 
+
+@app.route('/pokemon_by_type/<string:poke_type>')
+def by_type(poke_type):
+	print(models.Pokemon.query.filter_by(type=poke_type.lower()))
+	return render_template('all_pokemon.html', pokemon=models.Pokemon.query.filter_by(type=poke_type.lower()), types=types_list)
+
+
+@app.errorhandler(404)
+def not_found(e):
+	return f'Could not find {e}'
 
 # @app.route('/team/<int:user_id>')
 # def team(user_id):
@@ -40,7 +76,7 @@ def sign_up_route():
 	if myForm.is_submitted():
 		this_user = models.User(id=request.form.get('id'),
 		                        name=request.form.get('name'),
-		                        passsword=request.form.get('password'),
+		                        password=request.form.get('password'),
 		                        team=[]
 		                        )
 		db.session.add(this_user)

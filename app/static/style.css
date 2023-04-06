@@ -5,8 +5,17 @@
 	margin-top: 10vh;
 }
 
-.pet_header{
-    margin-left:5vw;
+.preview>img{
+    width:80%;
+    height:100%;
+}
+
+.poke_details{
+    margin-top:5vh;
+}
+
+.details{
+    margin-top:8vh;
 }
 
 /*  this is for the cards */
@@ -39,4 +48,8 @@
   border: 5px solid #fff !important;
   box-shadow: #222 1px 0 10px;
   text-decoration: underline;
+}
+
+.button_p{
+    margin-bottom:0;
 }
