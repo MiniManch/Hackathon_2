@@ -1,0 +1,62 @@
+{% extends 'navbaronly.html' %}
+
+{% block custom_style %}
+<link href="
+https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css
+" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<!--NAVBAR-->
+<script>
+ let player_one = {{player_1|tojson}}
+ let player_two = {{player_2|tojson}}
+
+ function first_turn(){
+ 	return(Math.floor(Math.random() * 10))
+ }
+</script>
+<main id="game_interface">
+    <section id="player_one">
+    <!--Player One-->
+        <img src="{{player_1['team'][0]['image_front']}}" class="poke_game_image" alt="#">
+    <!--Moves table-->
+        <table class="table table-hover moves_table" id="first_player_moves">
+          <tbody>
+            <tr class="table-active player_one_moves_row">
+                {% for move in player_1['team'][0]['moves'] %}
+                <td class="move_button">
+                    <button type="button" class="btn btn-primary">
+                        {{player_1['team'][0]['moves'][move]['name']}}
+                    </button>
+                </td>
+                {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+    <!--End Player One-->
+    </section>
+    <p class="commentary"> </p>
+    <section id="player_two">
+        <!--Player Two-->
+        <img src="{{player_2['team'][0]['image_back']}}" class="poke_game_image" id="player_two_game_image" alt="#">
+    <!--Moves table-->
+        <table class="table table-hover moves_table" id="second_player_moves">
+          <tbody>
+            <tr class="table-active player_two_moves_row">
+                {% for move in player_2['team'][0]['moves'] %}
+                <td class="move_button">
+                    <button type="button" class="btn btn-primary">
+                        {{player_2['team'][0]['moves'][move]['name']}}
+                    </button>
+                </td>
+                {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+    <!--End Player Two-->
+    </section>
+
+</main>
+
+{% endblock %}

@@ -1,7 +1,24 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{user.name.capitalize()}}'s Team!</h1>
+<header>
+<h1 class="player_name">{{user.name.capitalize()}}'s Team!</h1>
+  <div class="dropdown drop_container">
+    <a class="btn start_button dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Start Game
+     </a>
+    <ul class="dropdown-menu">
+      {% for user_against in users %}
+      {% if user_against.name != user.name %}
+      <li><a class="dropdown-item" href="{{url_for('start_game',user_against_id = user_against.id)}}">{{user_against.name}}</a></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</header>
+
+<!-- Example single danger button -->
+
 <div class="container mx-auto mt-4">
   <div class="row">
     {% for poke in user.team%}
@@ -15,11 +32,6 @@
       </div>
     </div>
     {% endfor%}
-  </div>
-  <div class="row">
-    <div class="start_button">
-          <a href="#" class="btn ms-5"> Start battling!</a>
-    </div>
   </div>
 </div>
 

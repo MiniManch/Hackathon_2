@@ -25,17 +25,14 @@ pokemon_file = 'app/static/pokemon.json'
 moves_file = 'app/static/final_moves.json'
 
 with app.app_context():
-	db.drop_all()
-	db.create_all()
-	populate_moves(database=db, model=models.Move, json_file=moves_file)
-	populate_pokemon(database=db, model=models.Pokemon, model_2=models.Move, json_file=pokemon_file)
+	pass
+	# db.drop_all()
+	# db.create_all()
+	# populate_moves(database=db, model=models.Move, json_file=moves_file)
+	# populate_pokemon(database=db, model=models.Pokemon, model_2=models.Move, json_file=pokemon_file)
 	# db.session.commit()
 
 
 
 
 
-# populate_pokemon(database=db, model=models.Pokemon, json_file=pokemon_file)
-#
-# print(get_move(1))
-# print(getpoke(1))

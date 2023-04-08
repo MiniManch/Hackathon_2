@@ -42,3 +42,33 @@ def populate_moves(database, model, json_file):
         }
         database.session.add(model(new_poke))
     database.session.commit()
+
+
+def get_pokemon_from_row(pokemon):
+    pokemon_dict = {
+        'name': pokemon.name,
+        'health': pokemon.health,
+        'attack': pokemon.attack,
+        'type': pokemon.type,
+        'image_front': pokemon.image_front,
+        'image_back': pokemon.image_back,
+        'moves': pokemon.moves
+    }
+    return pokemon_dict
+    # moves = db.relationship('Move', secondary=move_pokemon_table, backref='pokemon')
+
+def get_moves_dict(pokemon):
+    moves_dict = {}
+    i=1
+    for move in pokemon['moves']:
+        move = {
+            'acc': move.acc,
+            'power': move.power,
+            'name': move.name,
+            'effect_type': move.effect_type,
+            'effect_power': move.effect_power,
+        }
+        moves_dict[i] = move
+        i+=1
+    pokemon['moves'] = moves_dict
+    return pokemon

@@ -3,6 +3,7 @@ from flask_login import UserMixin, login_user, LoginManager, login_required, log
 from app.forms import add_user as login_form, search
 from app import app, db
 from app import models
+from app.my_functions import get_moves_dict,get_pokemon_from_row
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -131,7 +132,6 @@ def add_to_team(pokemon_id):
 		user.team.append(this_pokemon)
 		db.session.commit()
 		flash(f'{this_pokemon.name} was added to your team!')
-		print(user.team)
 		return redirect(url_for('pokemon'))
 	else:
 		flash(f'{this_pokemon.name} cannot be added to your team! your team already has 3 pokemon in it.')
@@ -141,5 +141,23 @@ def add_to_team(pokemon_id):
 @app.route('/team')
 @login_required
 def team_route():
-	return render_template('team.html',user=current_user )
+	return render_template('team.html', user=current_user, users=models.User.query.all())
+
+
+@app.route('/startgame/<int:user_against_id>')
+@login_required
+def start_game(user_against_id):
+	user_against = models.User.query.filter_by(id=user_against_id).first()
+
+	player_1_pokemon = []
+	player_1 = {
+		"name": current_user.name,
+		"team": [get_moves_dict(get_pokemon_from_row(poke)) for poke in current_user.team]
+
+	}
+	player_2 = {
+		"name": user_against.name,
+		'team': [get_moves_dict(get_pokemon_from_row(poke)) for poke in user_against.team]
+	}
+	return render_template('game.html', player_1=player_1, player_2=player_2)
 

@@ -75,5 +75,70 @@
 }
 
 .start_button{
-    margin-left:25vw;
+    margin-left:15vw;
+    width:10vw;
+}
+
+.player_name{
+    display:inline-block;
+    margin:0;
+    margin-top:5vh;
+    margin-left:5vw;
+    width:25vw;
+    padding:0;
+}
+.drop_container{
+    display:inline-block;
+    width:15vw;
+}
+
+.moves_table{
+    display:inline-block;
+    position:relative;
+    width:30vw !important;
+    left:7vw;
+}
+
+#first_player_moves{
+    top:0;
+}
+
+#second_player_moves{
+    position:relative;
+    bottom:2vh;
+}
+
+.move_button{
+    margin-left:2vw;
+    height:9vh;
+}
+
+#game_interface{
+    margin-left:20vw;
+    border:2px solid grey;
+    width:60vw;
+    height:80vh;
+}
+
+.poke_game_image{
+    width:200px;
+    height:200px;
+    position:relative;
+    left:0;
+}
+
+#player_two{
+    position:absolute;
+    bottom:0;
+}
+
+#player_two_game_image{
+    bottom:10.5vh;
+}
+
+.commentary{
+    position:relative;
+    top:20vh;
+    left:30%;
+
 }
