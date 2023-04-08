@@ -12,7 +12,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] ='mysql+pymysql://root:admatainov14!@local
 
 # Secret Key
 app.config['SECRET_KEY'] = get_random_string(256)
-app.config['DEBUG'] = True
+# app.config['DEBUG'] = True
 
 # Initialize The Database
 db = SQLAlchemy(app)

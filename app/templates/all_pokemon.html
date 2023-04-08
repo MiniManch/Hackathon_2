@@ -27,14 +27,13 @@
 			<ul class="nav navbar-nav">
 				<!-- Products -->
 				<container class="search_bar">
-					<form class="navbar-form navbar-right">
-						<div class="form-group">
-							<div>
-								<input type="text" class="form-control search_text" placeholder="Search">
-								<button type="submit" class="search_button"><span class="fa fa-search"></span></button>
-							</div>
-						</div>
+					<form class='navbar-form navbar-right' method="POST" action="#">
+						{{ form.hidden_tag()}}
+						{{form.search(class='form-control search_text',placeholder='Search')}}
+						<button type="submit" class="search_button"><span class="fa fa-search"></span></button>
+
 					</form>
+
 				</container>
 				<!-- Services -->
 				<li class="dropdown">
@@ -60,7 +59,7 @@
 <div class="container mx-auto mt-4">
   <div class="row">
     {% for poke in pokemon %}
-    {% if poke.owner == None %}
+    {% if poke not in user.team %}
     <div class="col-md-4">
       <div class="card" style="width: 18rem;">
         <img src="{{poke.image_front}}" class="card-img-top" alt="...">

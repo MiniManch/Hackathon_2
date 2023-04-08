@@ -1,7 +1,8 @@
 from app import db
+from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user
 
 
-class User(db.Model):
+class User(db.Model, UserMixin):
 	id = db.Column(db.Integer, primary_key=True)
 	name = db.Column(db.String(50), nullable=False)
 	team = db.relationship('Pokemon', backref='owner')
@@ -43,3 +44,5 @@ class Pokemon(db.Model):
 	def __init__(self, dictionary):
 		for key, value in dictionary.items():
 			setattr(self, key, value)
+
+

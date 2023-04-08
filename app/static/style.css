@@ -6,8 +6,8 @@
 }
 
 .preview>img{
-    width:80%;
-    height:100%;
+    width:30vw;
+    height:25vh%;
 }
 
 .poke_details{
@@ -52,4 +52,28 @@
 
 .button_p{
     margin-bottom:0;
+}
+
+.move_container{
+    margin-left:0;
+}
+.move_card{
+    width:60%;
+}
+
+.stat{
+    display:inline-block;
+    margin:1vh;
+}
+
+.close{
+    background:transparent;
+    border:none;
+    position:absolute;
+    right:5vh;
+    color:white;
+}
+
+.start_button{
+    margin-left:25vw;
 }

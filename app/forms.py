@@ -9,7 +9,6 @@ class add_user(FlaskForm):
 	submit                = SubmitField('Submit')
 
 
-# class login(FlaskForm):
-# 	name                  = StringField('Name ', validators=[InputRequired()])
-# 	password    		  = PasswordField(validators=[validators.Length(min=8, message='Too short')])
-# 	submit                = SubmitField('Submit')
+class search(FlaskForm):
+	search                = StringField('Search ', validators=[InputRequired()])
+	submit                = SubmitField('Submit')

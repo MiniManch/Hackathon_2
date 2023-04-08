@@ -15,17 +15,36 @@
                           <p><strong>Type:</strong> {{Pokemon.type.capitalize()}}</p>
                           <p><strong>Health:</strong> {{Pokemon.health}}</p>
                           <p><strong>Attack:</strong> {{Pokemon.attack}}</p>
+						  <p> <strong>Moves:</strong></p>
+
                           {% set i = namespace(value=1) %}
+							 <div class="container move_container">
+							  <div class="row">
                           {% for move in Pokemon.moves %}
-                          <p><strong>Move {{i.value}}#:</strong> {{move.name}}</p>
-                          {% set i.value = i.value + 1 %}
-                          {% endfor %}
-                      </header>
+								<div class="col-md-4 move_card">
+								  <div class="card mb-4 box-shadow">
+									<div class="card-body">
+									  <p class="card-text">{{move.name}}.</p>
+									  <div class="d-flex ">
+										  <p class="stat"><strong>Power: </strong>{{move.power}}</p>
+										  <p class="stat"><strong>Accuracy: </strong>{{move.acc}}</p>
+										  <p class="stat"><strong>Effect type:</strong> {{move.effect_type}}</p>
+										  <p class="stat"><strong>Effect Power: </strong>{{move.effect_power}}</p>
+									  </div>
+									</div>
+								  </div>
+								</div>
+						  {% set i.value = i.value + 1 %}
+						  {% endfor %}
+							  </div>
+								 {% if user is not none and Pokemon not in user.team%}
+					 	<a class=" btn btn-success" href="{{url_for('add_to_team',pokemon_id = Pokemon.id)}}">add to your team!</a>
+								 {% endif %}
+					</header>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 
 {% endblock %} 

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{user.name.capitalize()}}'s Team!</h1>
+<div class="container mx-auto mt-4">
+  <div class="row">
+    {% for poke in user.team%}
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="{{poke.image_front}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title {{poke.type}} ms-5">{{poke.name.capitalize()}}, {{poke.type.capitalize()}}</h5>
+          <a href="{{url_for('get_poke',poke_id_or_name = poke.id)}}" class="btn ms-5"><i class="fas fa-link"></i> More Details!</a>
+        </div>
+      </div>
+    </div>
+    {% endfor%}
+  </div>
+  <div class="row">
+    <div class="start_button">
+          <a href="#" class="btn ms-5"> Start battling!</a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
