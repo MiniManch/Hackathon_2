@@ -1,10 +1,14 @@
 {% extends 'base.html' %}
+
 {% block custom_style %}
-
 <link rel="stylesheet" href="{{url_for('static',filename='filter.css')}}">
-
 {% endblock %}
 
+{% block logged_in %}
+{% if user_name != '' %}
+logged in as: {{user_name}}
+{% endif %}
+{% endblock %}
 
 {% block content %}
 <!-- Options -->

@@ -154,3 +154,14 @@
 .stats>p{
     display:inline-block;
 }
+
+#logged_as{
+    position:absolute;
+    top:0;
+    right:10vh;
+}
+
+.remove_button{
+    border:none;
+    background-color:red !important;
+}

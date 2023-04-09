@@ -1,5 +1,9 @@
 {% extends 'navbaronly.html' %}
-
+{% block logged_in %}
+{% if user_name != '' %}
+logged in as: {{user_name}}
+{% endif %}
+{% endblock %}
 {% block custom_style %}
 <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css" rel="stylesheet">
 {% endblock %}
@@ -121,27 +125,6 @@ function disable_buttons(turn){
     }
 }
 
-// 	if (turn == 1){
-// 		buttons_to_disable = document.querySelectorAll(".player_one_moves_row>td>button");
-// 		for (button of buttons_to_disable){
-// 			button.setAttribute("disabled", "");
-// 		}
-// 		buttons_to_enable =  document.querySelectorAll(".player_two_moves_row>td>button");
-// 		for (button of buttons_to_enable){
-// 			button.removeAttribute("disabled");
-// 		}
-// 	}
-// 	else if (turn == 2){
-// 		buttons_to_disable = document.querySelectorAll(".player_two_moves_row>td>button");
-// 		for (button of buttons_to_disable){
-// 			button.setAttribute("disabled", "");
-// 		}
-// 		buttons_to_enable =  document.querySelectorAll(".player_one_moves_row>td>button");
-// 		for (button of buttons_to_enable){
-// 			button.removeAttribute("disabled");
-// 		}
-// 	}
-// }
 
 
 function change_turn(turn,skip){
@@ -399,9 +382,6 @@ function play_move(){
 for (button of all_buttons){
     button.addEventListener('click',play_move);
 }
-
-//attack fail repeat?
-// check win?
 
 </script>
 {% endblock %}

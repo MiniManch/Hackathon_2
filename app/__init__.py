@@ -3,7 +3,6 @@ from flask_sqlalchemy import SQLAlchemy
 import flask_migrate
 from app.my_functions import get_random_string, populate_pokemon, populate_moves
 from app import create_db
-import random
 
 app = Flask(__name__)
 #
@@ -24,8 +23,8 @@ from app import routes
 pokemon_file = 'app/static/pokemon.json'
 moves_file = 'app/static/final_moves.json'
 
-with app.app_context():
-	pass
+# with app.app_context():
+# 	pass
 	# db.drop_all()
 	# db.create_all()
 	# populate_moves(database=db, model=models.Move, json_file=moves_file)

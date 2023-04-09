@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
 
+{% block logged_in %}
+{% if user_name != '' %}
+logged in as: {{user_name}}
+{% endif %}
+{% endblock %}
+
 {% block content %}
 {% endblock %}

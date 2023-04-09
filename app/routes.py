@@ -36,30 +36,40 @@ def not_found(e):
 @app.route('/')
 @app.route('/home')
 def home():
-	return render_template('index.html', pokemon=models.Pokemon.query.all())
+	if current_user.is_authenticated:
+		user_name = current_user.name
+	else:
+		user_name = ''
+
+	return render_template('index.html', pokemon=models.Pokemon.query.all(),user_name = user_name)
 
 
 @app.route('/all_pokemon',methods=['GET', 'POST'])
 def pokemon():
 	if current_user.is_authenticated:
 		user = current_user
+		user_name = current_user.name
 	else:
 		user = None
+		user_name = ''
 	form = search()
 	if form.is_submitted():
 		data = dict(request.form)['search']
 		return redirect(url_for('get_poke',poke_id_or_name = data))
 	pokemon_to_show = models.Pokemon.query.all()
 
-	return render_template('all_pokemon.html', pokemon=pokemon_to_show, types=types_list, form=form,user=user)
+	return render_template('all_pokemon.html', pokemon=pokemon_to_show, types=types_list, form=form,user=user,user_name=user_name)
 
 
 @app.route('/pokemon/<poke_id_or_name>')
 def get_poke(poke_id_or_name):
 	if current_user.is_authenticated:
 		user = current_user
+		user_name = current_user.name
 	else:
 		user = None
+		user_name = ''
+
 
 	if poke_id_or_name.isnumeric():
 		try:
@@ -72,20 +82,34 @@ def get_poke(poke_id_or_name):
 			poke_id = models.Pokemon.query.filter_by(name=poke_id_or_name.lower()).first().id
 		except:
 			return not_found(poke_id_or_name)
-	return render_template('get_poke.html', Pokemon=models.Pokemon.query.filter_by(id=poke_id).first(),user=user)
+	return render_template('get_poke.html', Pokemon=models.Pokemon.query.filter_by(id=poke_id).first(),user=user,user_name=user_name)
 
 
 @app.route('/pokemon_by_type/<string:poke_type>', methods=['GET', 'POST'])
 def by_type(poke_type):
+	if current_user.is_authenticated:
+		user = current_user
+		user_name = current_user.name
+	else:
+		user = None
+		user_name = ''
+
 	form = search()
 	if form.is_submitted():
 		data = dict(request.form)['search']
 		return redirect(url_for('get_poke', poke_id_or_name=data))
-	return render_template('all_pokemon.html', pokemon=models.Pokemon.query.filter_by(type=poke_type.lower()), types=types_list, form=form,user=current_user)
+	return render_template('all_pokemon.html', pokemon=models.Pokemon.query.filter_by(type=poke_type.lower()), types=types_list, form=form,user=current_user,user_name=user_name)
 
 
 @app.route('/sign_up', methods=['GET', 'POST'])
 def sign_up_route():
+	if current_user.is_authenticated:
+		user = current_user
+		user_name = current_user.name
+	else:
+		user = None
+		user_name = ''
+
 	myForm = login_form()
 	title = 'Sign up!'
 	if myForm.is_submitted():
@@ -103,11 +127,18 @@ def sign_up_route():
 		else:
 			flash('User already exists, try again')
 			return redirect(url_for('sign_up_route'))
-	return render_template('AddUser.html', form=myForm,title=title)
+	return render_template('AddUser.html', form=myForm,title=title, user_name= user_name)
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+	if current_user.is_authenticated:
+		user = current_user
+		user_name = current_user.name
+	else:
+		user = None
+		user_name = ''
+
 	myForm = login_form()
 	title = 'Login!'
 	if myForm.is_submitted():
@@ -121,10 +152,11 @@ def login():
 				flash(f'Wrong Password, try again')
 		else:
 			flash('User doesnt exist. try again')
-	return render_template('AddUser.html', form=myForm,title=title)
+	return render_template('AddUser.html', form=myForm,title=title,user_name=user_name)
 
 
 @app.route('/add_to_team<int:pokemon_id>')
+@login_required
 def add_to_team(pokemon_id):
 	user = current_user
 	this_pokemon = models.Pokemon.query.filter_by(id=pokemon_id).first()
@@ -138,6 +170,17 @@ def add_to_team(pokemon_id):
 		return redirect(url_for('get_poke',poke_id_or_name = pokemon_id))
 
 
+@app.route('/remove_from_team/<int:pokemon_id>')
+@login_required
+def remove_from_team(pokemon_id):
+	user = current_user
+	this_pokemon = models.Pokemon.query.filter_by(id=pokemon_id).first()
+	user.team.remove(this_pokemon)
+	db.session.commit()
+	flash(f'{this_pokemon.name} was removed from your team!')
+	return redirect(url_for('pokemon'))
+
+
 @app.route('/team')
 @login_required
 def team_route():
@@ -147,6 +190,13 @@ def team_route():
 @app.route('/startgame/<int:user_against_id>')
 @login_required
 def start_game(user_against_id):
+	if current_user.is_authenticated:
+		user = current_user
+		user_name = current_user.name
+	else:
+		user = None
+		user_name = ''
+
 	user_against = models.User.query.filter_by(id=user_against_id).first()
 
 	player_1_pokemon = []
@@ -159,5 +209,5 @@ def start_game(user_against_id):
 		"name": user_against.name,
 		'team': [get_moves_dict(get_pokemon_from_row(poke)) for poke in user_against.team]
 	}
-	return render_template('game.html', player_1=player_1, player_2=player_2)
+	return render_template('game.html', player_1=player_1, player_2=player_2, user_name = user_name )
 
