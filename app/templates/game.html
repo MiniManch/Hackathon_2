@@ -99,27 +99,49 @@ function first_turn(){
 };
 
 function disable_buttons(turn){
-	if (turn == 1){
-		buttons_to_disable = document.querySelectorAll(".player_one_moves_row>td>button");
-		for (button of buttons_to_disable){
-			button.setAttribute("disabled", "");
-		}
-		buttons_to_enable =  document.querySelectorAll(".player_two_moves_row>td>button");
-		for (button of buttons_to_enable){
-			button.removeAttribute("disabled");
-		}
-	}
-	else if (turn == 2){
-		buttons_to_disable = document.querySelectorAll(".player_two_moves_row>td>button");
-		for (button of buttons_to_disable){
-			button.setAttribute("disabled", "");
-		}
-		buttons_to_enable =  document.querySelectorAll(".player_one_moves_row>td>button");
-		for (button of buttons_to_enable){
-			button.removeAttribute("disabled");
-		}
-	}
+        if (turn == 1){
+        buttons_to_disable = document.querySelectorAll(".player_two_moves_row>td>button");
+        for (button of buttons_to_disable){
+            button.setAttribute("disabled", "");
+        }
+        buttons_to_enable =  document.querySelectorAll(".player_one_moves_row>td>button");
+        for (button of buttons_to_enable){
+            button.removeAttribute("disabled");
+        }
+    }
+    else if (turn == 2){
+        buttons_to_disable = document.querySelectorAll(".player_one_moves_row>td>button");
+        for (button of buttons_to_disable){
+            button.setAttribute("disabled", "");
+        }
+        buttons_to_enable =  document.querySelectorAll(".player_two_moves_row>td>button");
+        for (button of buttons_to_enable){
+            button.removeAttribute("disabled");
+        }
+    }
 }
+
+// 	if (turn == 1){
+// 		buttons_to_disable = document.querySelectorAll(".player_one_moves_row>td>button");
+// 		for (button of buttons_to_disable){
+// 			button.setAttribute("disabled", "");
+// 		}
+// 		buttons_to_enable =  document.querySelectorAll(".player_two_moves_row>td>button");
+// 		for (button of buttons_to_enable){
+// 			button.removeAttribute("disabled");
+// 		}
+// 	}
+// 	else if (turn == 2){
+// 		buttons_to_disable = document.querySelectorAll(".player_two_moves_row>td>button");
+// 		for (button of buttons_to_disable){
+// 			button.setAttribute("disabled", "");
+// 		}
+// 		buttons_to_enable =  document.querySelectorAll(".player_one_moves_row>td>button");
+// 		for (button of buttons_to_enable){
+// 			button.removeAttribute("disabled");
+// 		}
+// 	}
+// }
 
 
 function change_turn(turn,skip){
@@ -133,25 +155,26 @@ function change_turn(turn,skip){
 		}
 	}
     alert(`turn of player ${turn}`)
+    disable_buttons(turn);
 	return turn;
 }
 
 
-function check_win(player,pokemon_defending){
+function check_win(player,pokemon){
     //check if win
-    if (pokemon_defending['health'] <= 0 ){
+    console.log(`health: ${pokemon['health']}`);
+    let i=1;
+    if (pokemon['health'] <= 0 ){
         player['team'].splice(0,1);
-        // for(pokemon in player['team']){
-        //     if(player['team'][pokemon]['name'] == pokemon_defending['name']){
-        //       var index = pokemon;
-        //     }
-        // }
-        console.log(player['team'][0]['name']);
-        if (player['team'].length == 0){
-            return true;
-        }else{
-            return false;
-        }
+        console.log('length is:',player['team'].length,`i is ${i}`)
+        i+=1;
+    }
+    if (player['team'].length == 0){
+        return true;
+    }else{
+        //change the dom
+        rearrange_dom(player) 
+        return false;
     }
 }
 
@@ -218,13 +241,15 @@ function deleteAndReCreateMoves(moves,buttonsTr,player){
     strong.innerHTML = 'Health:';
     if (player['name'] == player_one['name']){
     	span.id = 'player_1_health';
-        const image   = document.querySelector('#player_one>img');
-        image.setAttribute('src',player['team'][0]['image_front']);
+        let image   = document.querySelector('#player_one>img');
+        image.src = player['team'][0]['image_front'];
+        console.log(image.src);
     }
-    else if (player['name'] == player_one['name']){
-    	span.id = 'player_2_health';
-        const image   = document.querySelector('#player_two>img');
-        image.setAttribute('src',player['team'][0]['image_back']);
+    else if (player['name'] == player_two['name']){
+    	span.id   = 'player_2_health';
+        let image = document.querySelector('#player_two>img');
+        image.src = player['team'][0]['image_back'];
+        console.log(image.src)
     }
 
     span.innerHTML = `${player['team'][0]['health']}`;//
@@ -255,12 +280,6 @@ function deleteAndReCreateMoves(moves,buttonsTr,player){
 
 
 function rearrange_dom(other_player){
-/// reset dom incase pokemon died
-	document.querySelector('#player_1_health').innerHTML = player_one['team'][0]['health'];
-    document.querySelector('#player_1_attack').innerHTML = player_one['team'][0]['attack'];
-    document.querySelector('#player_2_health').innerHTML = player_two['team'][0]['health'];
-    document.querySelector('#player_2_health').innerHTML = player_two['team'][0]['attack'];
-
 // checking which buttons_tr we need to delete the children and recreate them later
    	buttons_tr = deleteYoChildren(other_player);
 
@@ -310,7 +329,6 @@ function play_move(){
    if (!chances){
         alert('attack failed!');
         turn = change_turn(turn);
-        disable_buttons(turn);
         return false;
    }
    let overall_attack = attack;
@@ -345,25 +363,36 @@ function play_move(){
         }
       }
    // check the skip
-   pokemon_defending['health'] -= overall_attack;
-   alert(overall_attack);
+    pokemon_defending['health'] -= overall_attack;
+    alert(overall_attack);
 
-   //change the dom
-   rearrange_dom(other_player)
+   /// reset dom incase pokemon died
+    if (whichPlayer(other_player)['name'] == player_one['name']){
+        document.querySelector('#player_1_health').textContent =  other_player['team'][0]['health'];
+        document.querySelector('#player_1_attack').textContent =  other_player['team'][0]['attack'];
+        document.querySelector('#player_2_health').textContent =  player['team'][0]['health'];
+        document.querySelector('#player_2_attack').textContent =  player['team'][0]['attack'];  
+    }
+    else if(whichPlayer(player)['name'] == player_one['name']){
+        document.querySelector('#player_1_health').textContent =  player['team'][0]['health'];
+        document.querySelector('#player_1_attack').textContent =  player['team'][0]['attack'];
+        document.querySelector('#player_2_health').textContent =  other_player['team'][0]['health'];
+        document.querySelector('#player_2_attack').textContent =  other_player['team'][0]['attack'];  
+    }
+    
 
    // check win
-   if(!check_win(other_player,pokemon_defending)){
+    if(!check_win(other_player,pokemon_defending)){
    		turn = change_turn(turn,skip);
-   		disable_buttons(turn);
         skip = '';
-   }
-   if(check_win(other_player,pokemon_defending)){
+    }
+    else if(check_win(other_player,pokemon_defending)){
         alert('winner!');
-        var all_buttons = document.querySelectorAll(".move_button>button");
+        let all_buttons = document.querySelectorAll(".move_button>button");
         for (button of all_buttons){
             button.setAttribute('disabled','');
         }
-   }
+    }
 }
 
 //giving them all the play move function on click
