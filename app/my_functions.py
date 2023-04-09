@@ -67,6 +67,7 @@ def get_moves_dict(pokemon):
             'name': move.name,
             'effect_type': move.effect_type,
             'effect_power': move.effect_power,
+            'id':move.id
         }
         moves_dict[i] = move
         i+=1

@@ -59,7 +59,7 @@
 <div class="container mx-auto mt-4">
   <div class="row">
     {% for poke in pokemon %}
-    {% if poke not in user.team %}
+    {% if poke.owner is none %}
     <div class="col-md-4">
       <div class="card" style="width: 18rem;">
         <img src="{{poke.image_front}}" class="card-img-top" alt="...">

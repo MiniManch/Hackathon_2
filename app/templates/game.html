@@ -1,36 +1,37 @@
 {% extends 'navbaronly.html' %}
 
 {% block custom_style %}
-<link href="
-https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css
-" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 <!--NAVBAR-->
-<script>
- let player_one = {{player_1|tojson}}
- let player_two = {{player_2|tojson}}
 
- function first_turn(){
- 	return(Math.floor(Math.random() * 10))
- }
-</script>
 <main id="game_interface">
     <section id="player_one">
     <!--Player One-->
-        <img src="{{player_1['team'][0]['image_front']}}" class="poke_game_image" alt="#">
+    <!-- Image-->
+        <img src="{{player_1['team'][0]['image_front']}}" class="poke_game_image" id="player_one_game_image" alt="#">
+
+    <!--stats-->
+
     <!--Moves table-->
         <table class="table table-hover moves_table" id="first_player_moves">
           <tbody>
             <tr class="table-active player_one_moves_row">
                 {% for move in player_1['team'][0]['moves'] %}
                 <td class="move_button">
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" id="{{player_1['team'][0]['moves'][move]['id']}}_{{player_1['name']}}" class="btn btn-primary">
                         {{player_1['team'][0]['moves'][move]['name']}}
                     </button>
                 </td>
                 {% endfor %}
+                <td>
+                    <strong>Health:</strong> <span id="player_1_health">{{player_1['team'][0]['health']}}</span>
+                </td>
+                <td>
+                    <strong>Base Attack:</strong> <span id="player_1_attack">{{player_1['team'][0]['attack']}}</span>
+                </td>
             </tr>
           </tbody>
         </table>
@@ -38,25 +39,341 @@ https://cdn.jsdelivr.net/npm/bootswatch@5.2.3/dist/cerulean/bootstrap.min.css
     </section>
     <p class="commentary"> </p>
     <section id="player_two">
-        <!--Player Two-->
+    <!--Player Two-->
+    <!-- Image-->
         <img src="{{player_2['team'][0]['image_back']}}" class="poke_game_image" id="player_two_game_image" alt="#">
+    <!--stats-->
+
     <!--Moves table-->
         <table class="table table-hover moves_table" id="second_player_moves">
           <tbody>
             <tr class="table-active player_two_moves_row">
                 {% for move in player_2['team'][0]['moves'] %}
                 <td class="move_button">
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" id="{{player_2['team'][0]['moves'][move]['id']}}_{{player_2['name']}}" class="btn btn-primary">
                         {{player_2['team'][0]['moves'][move]['name']}}
                     </button>
                 </td>
                 {% endfor %}
+                <td>
+                    <strong>Health:</strong> <span id="player_2_health">{{player_2['team'][0]['health']}}</span>
+                </td>
+                <td>
+                    <strong>Base Attack:</strong><span id="player_2_attack">{{player_2['team'][0]['attack']}}</span>
+                </td>
             </tr>
           </tbody>
         </table>
     <!--End Player Two-->
     </section>
-
 </main>
 
 {% endblock %}
+
+{% block custom_js %}
+<script>
+// getting the players from the request.
+let player_one = {{player_1|tojson}}
+let player_two = {{player_2|tojson}}
+
+// setting skip variable for the game
+var skip = '';
+
+// selecting all the buttons
+var all_buttons = document.querySelectorAll(".move_button>button");
+var turn = first_turn();
+disable_buttons(turn);
+
+function first_turn(){
+	num = Math.floor(Math.random() * 10);
+	while(true){
+		if (num == 1){
+			break;
+		}
+		if( num == 2){
+			break;
+		}
+		num = Math.floor(Math.random() * 10)
+	};
+	return(num);
+};
+
+function disable_buttons(turn){
+	if (turn == 1){
+		buttons_to_disable = document.querySelectorAll(".player_one_moves_row>td>button");
+		for (button of buttons_to_disable){
+			button.setAttribute("disabled", "");
+		}
+		buttons_to_enable =  document.querySelectorAll(".player_two_moves_row>td>button");
+		for (button of buttons_to_enable){
+			button.removeAttribute("disabled");
+		}
+	}
+	else if (turn == 2){
+		buttons_to_disable = document.querySelectorAll(".player_two_moves_row>td>button");
+		for (button of buttons_to_disable){
+			button.setAttribute("disabled", "");
+		}
+		buttons_to_enable =  document.querySelectorAll(".player_one_moves_row>td>button");
+		for (button of buttons_to_enable){
+			button.removeAttribute("disabled");
+		}
+	}
+}
+
+
+function change_turn(turn,skip){
+	// if there  isnt a skip turn will stay the same, also changes buttons
+	if (skip != 'Skip'){
+		if (turn == 1){
+			turn = 2;
+		}
+		else if(turn == 2){
+			turn=1;
+		}
+	}
+    alert(`turn of player ${turn}`)
+	return turn;
+}
+
+
+function check_win(player,pokemon_defending){
+    //check if win
+    if (pokemon_defending['health'] <= 0 ){
+        player['team'].splice(0,1);
+        // for(pokemon in player['team']){
+        //     if(player['team'][pokemon]['name'] == pokemon_defending['name']){
+        //       var index = pokemon;
+        //     }
+        // }
+        console.log(player['team'][0]['name']);
+        if (player['team'].length == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
+
+function deleteYoChildren(other_player){
+	if (other_player['name'] == player_one['name']){
+	    var buttons_tr = document.querySelector('.player_one_moves_row');
+	   	while (Object.keys(buttons_tr.children).length>0){
+	        for(child of buttons_tr.children){
+	            buttons_tr.removeChild(child);
+	   		}
+	   }
+	}
+	else if(other_player['name'] == player_two['name']){
+		var buttons_tr = document.querySelector('.player_two_moves_row');
+	   	while (Object.keys(buttons_tr.children).length>0){
+	        for(child of buttons_tr.children){
+	            buttons_tr.removeChild(child);
+	        }
+	    }
+	}
+	return buttons_tr;
+}
+
+
+function whichPlayer(other_player){
+	if (other_player['name'] == player_one['name']){
+    	var player = player_one;  //
+   	}
+   	else if(other_player['name'] == player_two['name']){
+   		var player = player_two;
+   	}
+	return player;
+}
+
+
+function deleteAndReCreateMoves(moves,buttonsTr,player){
+    for (move in moves){
+        let td = document.createElement('td')
+        td.classList.add('move_button');
+
+        let button = document.createElement('button');
+        button.setAttribute('type','button');
+        button.id = `${moves[move]['id']}_${player['name']}`; //
+        button.classList.add('btn', 'btn-primary')
+        button.innerHTML = `${moves[move]['name']}`
+
+        td.appendChild(button)
+        buttonsTr.appendChild(td)
+    }
+
+    // making sure all buttons have the play move func
+    var all_buttons = document.querySelectorAll(".move_button>button");
+    for (button of all_buttons){
+        button.addEventListener('click',play_move);
+        console.log(`this is a button: ${button}`)
+    }
+
+
+    let td     = document.createElement('td');
+    let strong = document.createElement('strong');
+    let span   = document.createElement('span');
+
+    strong.innerHTML = 'Health:';
+    if (player['name'] == player_one['name']){
+    	span.id = 'player_1_health';
+        const image   = document.querySelector('#player_one>img');
+        image.setAttribute('src',player['team'][0]['image_front']);
+    }
+    else if (player['name'] == player_one['name']){
+    	span.id = 'player_2_health';
+        const image   = document.querySelector('#player_two>img');
+        image.setAttribute('src',player['team'][0]['image_back']);
+    }
+
+    span.innerHTML = `${player['team'][0]['health']}`;//
+
+    td.appendChild(strong);
+    td.appendChild(span);
+
+    buttonsTr.appendChild(td);
+
+    let td_2     = document.createElement('td');
+    let strong_2  = document.createElement('strong');
+    let span_2   = document.createElement('span');
+
+    strong_2.innerHTML = 'Base Attack:';
+    if (player['name'] == player_one['name']){
+    	span_2.id = 'player_1_attack';
+    }
+    else if (player['name'] == player_two['name']){
+    	span_2.id = 'player_2_attack';
+    }
+    span_2.innerHTML = `${player['team'][0]['attack']}`;
+
+    td_2.appendChild(strong_2);
+    td_2.appendChild(span_2);
+    buttonsTr.appendChild(td_2);
+}
+
+
+
+function rearrange_dom(other_player){
+/// reset dom incase pokemon died
+	document.querySelector('#player_1_health').innerHTML = player_one['team'][0]['health'];
+    document.querySelector('#player_1_attack').innerHTML = player_one['team'][0]['attack'];
+    document.querySelector('#player_2_health').innerHTML = player_two['team'][0]['health'];
+    document.querySelector('#player_2_health').innerHTML = player_two['team'][0]['attack'];
+
+// checking which buttons_tr we need to delete the children and recreate them later
+   	buttons_tr = deleteYoChildren(other_player);
+
+// checking which player we need to create the dom for
+   	player = whichPlayer(other_player);
+   	moves  = player['team'][0]['moves'];
+
+// delete and re create moves table and image!
+   	deleteAndReCreateMoves(moves,buttons_tr,player);
+
+}
+
+
+//giving them all the play move function on click
+function play_move(){
+    user_name = this.id.split('_')[1];
+    move_id   = this.id.split('_')[0];
+
+    //checking which player played
+    if (user_name == player_one['name']){
+        player = player_one;
+        other_player = player_two;
+
+    }
+    else{
+        player = player_two;
+        other_player = player_one;
+    }
+
+    // getting the pokemons
+    pokemon_attacking = player['team'][0];
+    pokemon_defending = other_player['team'][0];
+
+    //checking which move was played
+    for(move in pokemon_attacking['moves']){
+        if (pokemon_attacking['moves'][move]['id'] == move_id){
+            move_played = pokemon_attacking['moves'][move];
+        }
+   }
+
+   // calc the attack, by attack of pokemon * power of move/100 and it will do it if acc is good
+   let attack  = pokemon_attacking['attack'] * (move_played['power']/100);
+   let chances = Math.floor(Math.random() * 100) < move_played['acc'];
+   let effects = move_played['effect_type'].split(' ');
+   let effect_power = move_played['effect_power'];
+
+   if (!chances){
+        alert('attack failed!');
+        turn = change_turn(turn);
+        disable_buttons(turn);
+        return false;
+   }
+   let overall_attack = attack;
+   for (effect of effects){
+        let chances = Math.floor(Math.random() * 100) < move_played['acc'];
+        if (chances){
+             //attack+ adds up to the pokemon's base attack.
+            if (effect =='Attack+'){
+                pokemon_attacking['attack'] += effect_power;
+            }
+
+            //attack- weakens opponents base attack
+            if(effect == 'Attack-'){
+                pokemon_defending['attack'] -= effect_power;
+            }
+
+            //health- will be added to the overall_attack.
+            if(effect == 'Health-'){
+                overall_attack += effect_power;
+            }
+
+            //health+ heals the attacking pokemon
+            if(effect == 'Health+'){
+                pokemon_attacking['health'] += effect_power;
+            }
+
+            //skip will skip a turn!
+            if(effect == 'Skip'){
+                skip = 'Skip';
+                alert('skip!')
+            }
+        }
+      }
+   // check the skip
+   pokemon_defending['health'] -= overall_attack;
+   alert(overall_attack);
+
+   //change the dom
+   rearrange_dom(other_player)
+
+   // check win
+   if(!check_win(other_player,pokemon_defending)){
+   		turn = change_turn(turn,skip);
+   		disable_buttons(turn);
+        skip = '';
+   }
+   if(check_win(other_player,pokemon_defending)){
+        alert('winner!');
+        var all_buttons = document.querySelectorAll(".move_button>button");
+        for (button of all_buttons){
+            button.setAttribute('disabled','');
+        }
+   }
+}
+
+//giving them all the play move function on click
+for (button of all_buttons){
+    button.addEventListener('click',play_move);
+}
+
+//attack fail repeat?
+// check win?
+
+</script>
+{% endblock %}
+

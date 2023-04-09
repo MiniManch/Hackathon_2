@@ -124,7 +124,7 @@
     width:200px;
     height:200px;
     position:relative;
-    left:0;
+    left:22.5vw;
 }
 
 #player_two{
@@ -133,12 +133,24 @@
 }
 
 #player_two_game_image{
-    bottom:10.5vh;
+    bottom:25vh;
 }
 
+#player_one_game_image{
+    top:10vh;
+}
 .commentary{
     position:relative;
     top:20vh;
     left:30%;
 
+}
+
+.stats{
+    position:absolute;
+    left:0;
+    display:inline;
+}
+.stats>p{
+    display:inline-block;
 }
